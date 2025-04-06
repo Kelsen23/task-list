@@ -10,17 +10,17 @@ const Sidebar = () => {
         <div className="p-4">
           <h3 className="text-lg font-semibold flex items-center">Lists</h3>
 
-          <button className="flex justify-center items-center mt-[1rem] cursor-pointer">
+          <button onClick={openListModal} className="flex justify-center items-center mt-[1rem] cursor-pointer">
             <FaPlus className="mr-2" /> List
           </button>
         </div>
 
         <div className="p-4">
-          <h3 className="text-lg font-semibold flex items-center">
+          <h3 className="text-lg font-semibold flex items-center">  
             Workspaces
           </h3>
 
-            <button className="flex justify-center items-center mt-[1rem] cursor-pointer">
+            <button onClick={openWorkspaceModal} className="flex justify-center items-center mt-[1rem] cursor-pointer">
               <FaPlus className="mr-2" /> Worspaces
             </button>
         </div>

@@ -2,6 +2,7 @@ import { MdMoreVert } from "react-icons/md";
 import MainArea from "./components/MainArea";
 import Sidebar from "./components/Sidebar";
 import { useStore } from "./store";
+import Modal from "./components/Modal";
 
 const App = () => {
   const {
@@ -90,6 +91,8 @@ const App = () => {
           </ul>
         </div>
       </div>
+
+      <Modal />
     </div>
   );
 };
