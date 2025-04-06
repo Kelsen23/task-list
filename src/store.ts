@@ -51,7 +51,6 @@ interface AppState {
   setSelectedWorkspace: (workspace: string) => void;
   setTodoText: (text: string) => void;
   handleAddTodo: () => void;
-  setModalAdd: (name: string) => void;
   setModalName: (name: string) => void;
   setModalEmoji: (emoji: string) => void;
   setModalType: (type: "List" | "Workspace") => void;
