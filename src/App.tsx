@@ -18,7 +18,7 @@ const App = () => {
   } = useStore();
 
   return (
-    <div>
+    <div className="flex flex-row">
       <Sidebar />
 
       <div className="flex-1 p-6">
