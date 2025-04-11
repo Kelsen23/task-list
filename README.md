@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+# ✅ Task List Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and minimal todo manager built with React, Zustand, and Tailwind CSS. Organize tasks with **Lists** and **Workspaces**, create todos dynamically, and manage everything from a beautiful and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📝 Add todos with descriptions
+- 🗂️ Categorize tasks by **Lists** and **Workspaces**
+- ➕ Create new lists and workspaces using modals
+- 🧠 Global state managed with [Zustand](https://github.com/pmndrs/zustand)
+- 🎨 Clean and responsive design with [Tailwind CSS](https://tailwindcss.com/)
+- 💾 Extensible logic with a custom store structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📸 Screenshots
+
+![Screenshot 1](screenshots/screenshot-1.png)
+![Screenshot 2](screenshots/screenshot-2.png)
+![Screenshot 3](screenshots/screenshot-3.png)
+![Screenshot 4](screenshots/screenshot-4.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** (Functional components & hooks)
+- **TypeScript**
+- **Zustand** for global state
+- **Tailwind CSS** for styling
+- **React Icons** for minimal UI icons
+
+---
+
+## 🚀 Getting Started
+
+Clone the repo and run it locally:
+
+```bash
+git clone https://github.com/Kelsen23/task-list.git
+cd task-list
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🤝 Contributing
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Pull requests and feature suggestions are welcome! Feel free to fork the repo and open a PR.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
